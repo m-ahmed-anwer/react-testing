@@ -1,70 +1,52 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Testing with GitHub Actions
 
-## Available Scripts
+Welcome to the React Testing with GitHub Actions repository! This project serves as a hands-on learning experience for anyone looking to master testing in React applications and automating test workflows using GitHub Actions.
 
-In the project directory, you can run:
 
-### `npm start`
+## 🚀 Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This repository contains a simple Create React App setup, integrated with various testing frameworks and libraries. The primary goal is to implement and automate testing processes, ensuring code quality and reliability in React applications.
+## 🧪 Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Comprehensive Testing**: Learn how to write unit and integration tests for your React components using Jest and React Testing Library.
+- **Docker Integration**: Utilize Docker to create a consistent testing environment, allowing you to run tests in isolated containers.
+- **Continuous Integration**: Set up GitHub Actions to automatically run tests on every push and pull request, ensuring that your codebase remains stable and bug-free.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Getting Started
 
-### `npm run build`
+To get started with this project, clone the repository and install the necessary dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  git clone https://github.com/m-ahmed-anwer/react-testing
+  cd react-testing
+  npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Running Tests Locally**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can run tests locally using the following command:
+```bash
+npm test
+```
 
-### `npm run eject`
+**Running Tests with Docker**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run tests in a Docker container, use the following command:
+```bash
+docker build . -t react-app
+docker run --rm react-app
+```
+## 🔗 GitHub Actions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project is equipped with a GitHub Actions workflow that automatically builds the Docker container and runs tests whenever changes are pushed to the `main` branch or a pull request is created. Check the `.github/workflows/ci.yml` file for configuration details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📚 Learn More
 
-## Learn More
+Explore the following resources to deepen your understanding of React testing and GitHub Actions:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React Testing Documentation](https://testing-library.com/docs/react-testing-library/intro/)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [Docker Documentation](https://docs.docker.com/)
