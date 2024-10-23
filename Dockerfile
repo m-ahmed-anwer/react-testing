@@ -4,14 +4,14 @@ FROM node:alpine
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json to leverage Docker's layer caching
+# Copy package.json and package-lock.json first for better caching
 COPY package*.json ./
 
-# Install dependencies using --legacy-peer-deps to avoid peer dependency conflicts
-RUN npm install --legacy-peer-deps
+# Install dependencies
+RUN npm install
 
-# Copy the rest of the application files to the container
+# Copy the rest of the application files
 COPY . .
 
-# Set the default command to run tests without watch mode
+# Set the default command to run tests
 CMD ["npm", "test", "--", "--watchAll=false"]
