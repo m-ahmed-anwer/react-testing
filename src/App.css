@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+/* New styles for text */
+.read-the-docs {
+  font-size: 1.2rem; /* Increased font size for better readability */
+  font-family: "Arial", sans-serif; /* Changed font family for a modern look */
+  margin-top: 20px;
+  line-height: 1.5; /* Improved line height for readability */
+  text-align: center; /* Centered text for better alignment */
+}
+
+.read-the-docs a {
+  color: #61dafb; /* Maintained link color */
+  text-decoration: underline; /* Added underline for links */
+}
+
+.read-the-docs a:hover {
+  color: #21a1f1; /* Darker blue on hover for better UX */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
