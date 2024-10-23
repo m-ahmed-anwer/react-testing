@@ -27,8 +27,8 @@ describe("Counter component", () => {
 
   test("check reset", () => {
     render(<Counter initialCount={10} />);
-    const resetButton = screen.getByText("Decrement");
+    const resetButton = screen.getByText("Reset");
     fireEvent.click(resetButton);
-    expect(screen.getByTestId("count-value")).toHaveTextContent("1");
+    expect(screen.getByTestId("count-value")).toHaveTextContent("0");
   });
 });
